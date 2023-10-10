@@ -2,9 +2,9 @@ import React, { useCallback, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { AppBar, InputAdornment, TextField, Button } from '@mui/material';
-#region Uncomment below lines to run dark mode tests
+//#region Uncomment below lines to run dark mode tests
  import {FormGroup, FormControlLabel, Switch } from '@mui/material';
-#endregion
+//#endregion
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Badge from '@mui/material/Badge';
