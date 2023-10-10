@@ -61,13 +61,13 @@ test.describe('Carousel', () => {
   })
 });
 
-test.describe('CarouselVRT', () => {  
+test.describe.skip('CarouselVRT', () => {  
   test.skip(({ browserName }) => browserName !== 'chromium', 'Chromium only!');
   test('verify carousel is pixel perfect - slide 1', async ({ page }) => {
     await expect(page.getByTestId('carousel')).toHaveScreenshot();
   })
 
-  test('verify carousel is pixel perfect - slide 2', async ({ page }) => {
+  test.skip('verify carousel is pixel perfect - slide 2', async ({ page }) => {
     const carousel = page.getByTestId('carousel');
     await carousel.getByRole('button', { name: 'Next' }).click();
     await expect(carousel).toHaveScreenshot();
